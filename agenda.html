@@ -46,21 +46,25 @@
         <!-- Jquery arriba por necesidad -->
         <script type="text/javascript" src="https://evpraxis.ucol.mx/app/libs/js/jquery-2.2.2.min.js"></script>
     </head>
-    <body>
-	<div id="app">
-		<encabezado></encabezado>
-		<cuerpo-principal></cuerpo-principal>
-		<piepagina></piepagina>
-	</div>
+    <body> 
+	<div id="app">  <!--Componente padre -->  
+		<encabezado></encabezado>   <!--Componente hijo-->
+		<cuerpo-principal></cuerpo-principal> <!--Componente hijo-->
+		<piepagina></piepagina> <!--Componente hijo-->
+    </div>
+ <!--Referencias de vue js -->   
 <script src="https://unpkg.com/vue@2.1.8/dist/vue.js"> </script>
+<!--Referencias de los componentes hijos -->
 <script type="text/javascript" src="Componentes/ComponenteEncabezado.js"></script>
 <script type="text/javascript" src="Componentes/ComponentePrincipal.js"></script>
 <script type="text/javascript" src="Componentes/ComponentePiedePagina.js"></script>
+
+
 <script type="text/javascript">
-	var vm=new Vue({
-		el:"#app",
-		data:{
-			name:'David'
+	var vm=new Vue({    //Con esta sintaxis se crea una nueva instancia de vue
+		el:"#app", //el: hace referencia al elemento que sera quien contenga los componentes hijos
+		data:{  //data: es una propiedad la cual indica que esta intancia manipulara valores(variables)
+			name:'David,Martin,Jorge' //name: es una simpre dato que contendra el objeto data de la intancia
 		}
 	})
 </script>

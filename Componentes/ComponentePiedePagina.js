@@ -1,4 +1,4 @@
-Vue.component('piepagina',{
+Vue.component('piepagina',{   //Aqui se esta creando un componente, con dos parametros, el primero el nombre de ese componente y el segundo una plantilla de ese componente
 template:
 `
         <footer class="footer">

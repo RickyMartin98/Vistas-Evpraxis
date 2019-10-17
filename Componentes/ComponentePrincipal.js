@@ -1,4 +1,4 @@
-Vue.component('cuerpo-principal',{
+Vue.component('cuerpo-principal',{   //Aqui se esta creando un componente, con dos parametros, el primero el nombre de ese componente y el segundo una plantilla de ese componente
 	template:
 	`
 <div>

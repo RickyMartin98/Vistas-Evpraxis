@@ -1,10 +1,10 @@
-Vue.component('editor',{
+Vue.component('editor',{   //Aqui se esta creando un componente, con dos parametros, el primero el nombre de ese componente y el segundo una plantilla de ese componente
 		template:`
 <div>
 		<div class="row">
 			<div class="col-md-12">
 				<h1 class="SectionTitle">Exámenes</h1>
-			</div>
+			</div> 
 		</div>
 		<div class="row">
 			<div class="col-md-3">
